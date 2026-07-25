@@ -13,7 +13,7 @@
 
 This system addresses the operational cost of manually resolving recurring, well-understood incidents such as service failures or repeated unauthorized access attempts. Remediation logic is defined as explicit condition-to-action rules, with sensitive operations requiring approval prior to execution. The design balances automation speed with operational oversight, reducing resolution time without removing accountability from the remediation process.
 
-**Key Features:**
+**Features:**
 
 - Condition-based remediation rules covering common, well-defined incident types
 - Approval-gated execution for high-impact or destructive actions
@@ -22,5 +22,3 @@ This system addresses the operational cost of manually resolving recurring, well
 **Technologies:**
 
 `Python` · `Prometheus Alertmanager` · `Wazuh` · `Slack API` · `PostgreSQL`
-
-**Limitation:** The current rule engine evaluates alerts independently and does not yet correlate related events into a single incident.
